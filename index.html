@@ -3,11 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="android-chrome-512x512.png">
+<link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dhanush portfolio</title>
     <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/b7e14b730c.js" ></script>
+    <script src="https://kit.fontawesome.com/b7e14b730c.js" ></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 
@@ -18,22 +21,22 @@
         <nav>
             <p id="logo">dhanush koti</p>
             <ul id="ul">
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#work">my work</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="#home" class="al">home</a></li>
+                <li><a href="#about" class="al">about</a></li>
+                <li><a href="#work" class="al">my work</a></li>
+                <li><a href="#contact" class="al">contact</a></li>
             </ul>
             <i class="fas fa-bars" id="bar"></i>
         </nav>
         <!-- <div class="top">
 <a href="#home">    <img src="arrow2.png" alt="asdsdadsa"></a>
    </div> -->
-        <div id="hider">
+        <div class="hider">
             <div class="content">
 
-                <h3>Hello, I'm</h3>
-                <h1 id="c">dhanush koti </h1>
-                <p>student , budding developer & human being </p>
+                <h3> <span class="h">Hello,</span>I'm</h3>
+                <h1 >dhanush koti </h1>
+                <p>Student|Budding Developer|Entrepreneur </p>
                 <a href="#about" id="a">about me</a>
                 <!-- <button id="#about"> <a href="#about">about me</a> </button> -->
             </div>
@@ -43,33 +46,32 @@
 
     <h1>about me</h1>
 
-    <section id="about">
+    <section id="about" class="hider">
 
 
 
         <div class="left">
-            <img src="about.png" alt="about">
+            <img src="dk.jpg" alt="about">
         </div>
         <div class="right">
             <p>
-                i'm dhanush koti, but you can just call me dk.
+                i'm dhanush koti, but you can just call me <span class="identify">DK.</span>
             </p>
             <br>
-            <p>i'm studying 11<sup>th</sup> std now and i also a budding developer too. coding is my passion and it
-                gives me more fun .</p>
-            <br>
-            <p>i've been honing my skills in web design.</p>
+             <p> I am constantly seeking to expand my knowledge and skills in various areas of <span class="identify">technology</span>. </p>
+            <br>    
+            <p>i've been honing my skills in <span class="identify">web deisgn.</span></p>
             <br>
             <!-- <p></p>
             <br> -->
-            <p>my inspiration is elon musk.</p>
+            <p>my inspiration is <span class="identify">elon musk .</span></p>
             <br>
-            <p>Less moody in real life. ✌️</p>
+            <p>Less <span class="identify">Moody</span> in real life. ✌️</p>
             <br>
-            <div class="con">
-                <p>Have An Intresting Project?</p>
-                <a href="#contact"><button>contact me</button></a>
-            </div>
+<div class="sub-con">
+    <p class="highl">Have An Intresting Project?</p>
+    <a href="#contact"><button>contact</button></a>
+</div>
         </div>
     </section>
 
@@ -94,20 +96,22 @@
         <div class="social-links">
             <a href="https://www.instagram.com/dhanush_7k/?hl=en"><i class="fab fa-instagram"> dhanush_7k</i></a>
             <a href="https://www.facebook.com/s.dhanushkoti.7"><i class="fab fa-facebook-f"> dhanush koti</i></a>
-             <a href="https://github.com/Dhanushkoti2006"><i class="fab fa-">   Dhanushkoti2006
+            <a href="https://github.com/Dhanushkoti2006"><i class="fab fa-">   Dhanushkoti2006
             </i></a>
+             
 
         </div>
         <div class="contact">
-            <form method="POST" action="https://formsubmit.co/42046d0369d782fbdc4b2f82cc51b23c" >
-                       <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_next" value="https://dhanushkoti2006.github.io/portfolio/thanks">
+            <!-- <form method="POST" action="https://formsubmit.co/42046d0369d782fbdc4b2f82cc51b23c " > -->
+                <!-- <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_next" value="https://dhanushkoti2006.github.io/test/thanks"> -->
 
 
+       <form   method="POST" action="contact.php">
                 <input type="text" placeholder="name" name="name" required  ><br>
-                <input type="email" placeholder="email" name="email" required ><br>
-                <textarea cols="30" rows="10" placeholder="type message"name="message" required>    </textarea><br>
-                <button type="submit" name="_captcha" value="false">send</button><br>
+                <input type="email" placeholder="email" name="email" required><br>
+                <textarea cols="30" rows="10" placeholder="type message" name="message" ></textarea><br>
+                <button type="submit" name="submit" value="submit">send</button><br>
             </form>
         </div>
     </section>
@@ -118,9 +122,7 @@
         <div class="social-links2">
             <a href="https://www.instagram.com/dhanush_7k/?hl=en"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/s.dhanushkoti.7"><i class="fab fa-facebook"></i></a>
-             <a href="https://www.instagram.com/dhanush_7k/?hl=en"><i class="far fa-envelope"></i></a>
-
-            
+            <a href="https://www.instagram.com/dhanush_7k/?hl=en"><i class="far fa-envelope"></i></a>
 
         </div>
 
@@ -131,6 +133,12 @@
     </section>
 
     <script src="app.js"></script>
+
+
+
+
+
+
 </body>
 
 </html>

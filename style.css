@@ -13,9 +13,12 @@
   --secondary: #fbc390;
   --third: #e7d6cf;
   --fourth: #c5f1fe;
-  --five: #eff0f2;
+  --five:#eff0f2 ;
+  color: sandybrown;
 }
-
+.h{
+  color: #9733f5;
+}
 nav {
   width: 100%;
   height: 55px;
@@ -25,19 +28,19 @@ nav {
  animation-delay: 1s;
   visibility: hidden;
   animation-fill-mode: forwards;
-  background: rgba(0, 0, 0, 0.603);
+  background: rgba(0, 0, 0, 0.003);
 }
 
 #logo {
-  font-family: "Neonderthaw", cursive;
+  font-family:'Courier New', Courier, monospace;
   float: left;
   margin-left: 35px;
   text-transform: capitalize;
   font-size: 2rem;
   cursor: pointer;
 
-  animation: top1 2s linear 1  ;
- animation-delay: 1s;
+  animation: top1 400ms linear 1  ;
+ animation-delay: 300ms;
  visibility: hidden;
  animation-fill-mode: forwards;
   color: var(--secondary);
@@ -81,14 +84,19 @@ p a {
   color: #fff;
 }
 #home {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.021)),
-    url("back.jpg");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.31)),
+    url("https://images.unsplash.com/photo-1604928844386-97d0ac6845fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
   height: 100vh;
   width: 100%;
   background-position: center;
   background-size: cover;
   position: relative;
  
+}
+
+
+.btn button{
+  background-color: none;
 }
 .text {
   position: absolute;
@@ -120,16 +128,16 @@ p a {
    }
 }
 .content h3 {
-  color: var(--five);
+  color: var(--third);
   text-align: center;
   font-size: 2rem;
 }
 .content h1 {
   color: var(--five);
-  text-transform: uppercase;
-  font-size: 3rem;
+  text-transform: capitalize;
+  font-size: 2.5rem;
   text-align: center;
-  font-family: cursive, sans-serif;
+  /* font-family: cursive, sans-serif; */
   font-weight: 900;
 
   margin-top: 5px;
@@ -150,7 +158,7 @@ button a {
 .content button:hover {
   background: transparent;
   color: var(--primary);
-  border: 2px solid orange;
+  border: 2px solid rgb(94, 80, 54);
 }
 .content button {
   padding: 5px 19px;
@@ -206,8 +214,17 @@ h1 {
 
 .left img {
   width: 300px;
-  border-radius: 20px;
+  border-radius:250px;
+  cursor:not-allowed;
+  filter: drop-shadow(10px 10px 20px blue);
+
+
 }
+.left img:hover{
+  filter: drop-shadow(10px 10px 90px red);
+
+}
+
 .right {
   width: 50%;
   flex-wrap: wrap;
@@ -223,8 +240,14 @@ h1 {
 
   text-transform: capitalize;
 }
+
+.sub-con p{
+  color:#9733f5;
+  margin-bottom: -10px;
+}
 .right button {
-  padding: 5px 15px;
+
+  padding: 10px 35px;
   border-radius: 20px;
   border: none;
   font-size: 2rem;
@@ -232,17 +255,21 @@ h1 {
   background: orange;
   color: var(--primary);
   text-transform: capitalize;
-  transition: color 700ms;
+  transition: all 400ms;
   cursor: pointer;
 }
 .right button:hover {
   background: #9900ff;
+  transform: scalex(1.1);
+  color: #eeee;
 }
-.con p {
-  font-family: "Gwendolyn";
-  color: #9900ff;
-  margin-bottom: -9px;
+
+.identify{
+  color: #fbc390;
 }
+
+
+
 .content #a{
   color: rgb(255, 255, 255);
 width: 7em;
@@ -252,9 +279,18 @@ height: 1.9em;
 border-radius: 10px;
 margin-top: 10px;
 text-decoration: none;
-  border: 2px solid orange;
+  border: 2px solid   #9900ff ;
   padding: 5px 9px;
   text-transform: capitalize;
+  transition: all 400ms;
+}
+
+.content #a:hover{
+  color: #9900ff ;
+  font-weight: 900;
+  
+  border: 2px solid   #eff0f2 ;
+
 }
 h1 {
   margin-top: 30px;
@@ -287,6 +323,7 @@ h1 {
   font-size: 2rem;
   justify-content: center;
 }
+
 
 .work {
   margin-right: 20px;
@@ -458,8 +495,8 @@ textarea::placeholder {
     margin-left: 20px;
   }
   .move {
-    position: absolute;
-    right: 90rem;
+     position: absolute;
+    right: 90rem; 
 
   }
   #logo {
@@ -469,11 +506,11 @@ textarea::placeholder {
   .show {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.562);
+    background-color: rgba(0, 0, 0, 0.02);
     width: 100%;
     justify-content: center;
     margin-top: -50px;
-  
+
     text-align: center;
     height: 75vh;
     z-index: 999999;
@@ -513,6 +550,13 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 650px) {
+  #home .content{
+    top:40%;
+    left: 50%;
+  }
+  #home{
+    height: 75vh;
+  }
   .content h1 {
     font-size: 1.5rem;
   }
@@ -534,7 +578,12 @@ textarea::placeholder {
   h1 {
     font-size: 28px;
   }
-
+ 
+  #about img {
+    width: 205px;
+    
+    margin-bottom: 25px;
+  }
   .social-links a i {
     font-size: 14px;
   }
@@ -554,13 +603,9 @@ height: 1.8em;
 border-radius: 10px;
   margin-top: 10px;
   text-decoration: none;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     padding: 5px 9px;
     text-transform: capitalize;
-  }
-    #about img {
-    width: 175px;
-    margin-bottom: 20px;
   }
 }
 
@@ -584,10 +629,7 @@ border-radius: 10px;
     font-size: 20px;
   }
 
-  #about img {
-    width: 175px;
-    margin-bottom: 20px;
-  }
+
   #about button {
     justify-content: center;
   }
